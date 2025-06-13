@@ -18,3 +18,13 @@ $ timer 2m30s
 ⏱️  Noch 02:29
 ...
 ✅ Zeit abgelaufen!
+## Installation und Deinstallation
+
+### Repository klonen, Paket bauen und installieren
+
+```bash
+git clone https://github.com/FLAS-Forum/timer.git
+cd timer
+makepkg -si
+Deinstallation:
+sudo pacman -Rns timer timer-debug
