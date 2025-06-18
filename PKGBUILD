@@ -1,14 +1,14 @@
 pkgname=flas-timer
 pkgver=1.0.0
 pkgrel=1
-pkgdesc="Timer application"
+pkgdesc="Timer application from FLAS Forum"
 arch=('x86_64')
 url="https://github.com/FLAS-Forum/timer"
 license=('MIT')
 depends=('glibc')
-makedepends=('cargo' 'rust')
+makedepends=('cargo')
 source=("git+https://github.com/FLAS-Forum/timer.git")
-sha256sums=('SKIP')
+md5sums=('SKIP')
 
 build() {
   cd "$srcdir/timer"
@@ -17,5 +17,5 @@ build() {
 
 package() {
   cd "$srcdir/timer"
-  install -Dm755 "target/release/timer" "$pkgdir/usr/bin/timer"
+  install -Dm755 target/release/timer "$pkgdir/usr/bin/flas-timer"
 }
