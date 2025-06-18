@@ -11,11 +11,11 @@ source=("git+https://github.com/FLAS-Forum/timer.git")
 sha256sums=('SKIP')
 
 build() {
-  cd "$srcdir/timer"   # Passe an, falls der Ordner anders heißt
+  cd "$srcdir/timer"
   cargo build --release
 }
 
 package() {
   cd "$srcdir/timer"
-  install -Dm755 "target/release/flas-timer" "$pkgdir/usr/bin/flas-timer"
+  install -Dm755 "target/release/timer" "$pkgdir/usr/bin/timer"
 }
