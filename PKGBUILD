@@ -8,7 +8,7 @@ license=('MIT')
 depends=('glibc')
 makedepends=('cargo')
 source=("git+https://github.com/FLAS-Forum/timer.git")
-md5sums=('SKIP')
+sha256sums=('SKIP')
 
 build() {
   cd "$srcdir/timer"
@@ -19,3 +19,4 @@ package() {
   cd "$srcdir/timer"
   install -Dm755 target/release/timer "$pkgdir/usr/bin/flas-timer"
 }
+
