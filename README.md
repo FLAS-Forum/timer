@@ -1,6 +1,6 @@
-# 🕒 Timer (Rust CLI)
+# 🕒 Arch Linux Timer (Rust CLI)
 
-Ein einfacher Timer für das Terminal – geschrieben in Rust. Gib z. B. timer 2m30s ein und sieh die Zeit rückwärts zählen.
+Ein einfacher Timer für das Terminal für Arch Linux – geschrieben in Rust. Gib z. B. timer 2m30s ein und sieh die Zeit rückwärts zählen.
 
 ## 🔧 Funktionen
 
