@@ -6,7 +6,7 @@ arch=('x86_64')
 url="https://github.com/FLAS-Forum/timer"
 license=('MIT')
 depends=('glibc')
-makedepends=('cargo')
+makedepends=('rust' 'cargo')
 source=("git+https://github.com/FLAS-Forum/timer.git")
 sha256sums=('SKIP')
 
